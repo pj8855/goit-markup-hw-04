@@ -1,0 +1,353 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFFFFF;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  border-bottom: 1px solid #ECECEC;
+  background-color: #FFFFFF;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+h1, h2, h3, p, ul {   
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* -- Логотип Студії -- */
+:root {
+  --brand-color: #2196F3;
+  --header-color: #000000;
+  --footer-color: #FFFFFF;
+}
+
+.logo {
+  color: var(--brand-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+/* -- Заміна кольору для лого у хеддері -- */
+#studio-logo {
+  color: var(--header-color)
+}
+
+/* -- Загальні доп. класи для списків та посилань -- */
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/*  -- Навігація по сторінках у хеддері -- */
+.header {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.menu {
+  margin-left: 93px;
+  margin-right: auto;
+}
+
+.menu-items {
+  display: flex;
+  gap: 50px;
+}
+
+.menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  padding: 32px 0;
+}
+
+/* -- Колір визначення розташування -- */
+.main {
+  color: var(--brand-color);
+}
+
+/* -- Телефон та пошта у хедері -- */
+.contacts {
+  display: flex;
+  gap: 50px;
+  justify-self: flex-end;
+}
+
+.mail {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.02em;
+  color: var(--brand-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* -- Секція heros -- */
+.heros {
+  background-color: #2F303A;
+  padding: 200px 0;
+}
+
+.heros-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+  width: 696px;
+  margin: 0 auto;
+}
+
+/* -- Кнопка замовлення у сек. heros -- */
+.order-button {
+  background: var(--brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  margin: 30px auto 0;
+  padding: 10px 32px;
+  display: flex;
+  cursor: pointer;
+}
+
+/* -- Секція Особливості -- */
+.features-list {
+  display: flex;
+  gap: 30px;
+}
+
+.features-list-item {
+  width: 270px;
+}
+
+.features-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+  margin-bottom: 10px;
+}
+
+.features-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* -- Секція about -- */
+.about {
+  padding-top: 0;
+}
+
+.about-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+}
+
+.about-list {
+  display: flex;
+  gap: 30px;
+}
+
+/* -- Секція Команда -- */
+.team {
+  background: #F5F4FA;
+}
+
+.team-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;  
+  gap: 30px;
+}
+
+.team-list-item {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.team-member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+/* -- посада учасника команди -- */
+.position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+  padding-bottom: 30px;
+}
+
+/* -- Кнопки фільтрів на ст. Портфоліо -- */
+.filters-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+.filter-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  border: 0;
+  border-radius: 4px;
+  padding: 6px 25px;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: #FFFFFF;
+  background: var(--brand-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+/* -- Зразки проектів на ст. портфоліо -- */
+.project {
+  width: 1170px;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 30px;
+  justify-content: center;
+}
+
+.project-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.project-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  padding: 20px 24px;
+}
+
+/* -- Підвал -- */
+footer {
+  background: #2F303A;
+  padding: 60px 0;
+}
+
+address {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+/* -- Заміна кольору для лого у "підвалі" -- */
+#studio-footer {
+  color: var(--footer-color)
+}
+
+/* -- Адреса -- */
+address {
+  margin-top: 20px;
+}
+
+/* -- телефон та мейл у "підвалі" */
+.footer-contacts-item {
+  margin-top: 9px;
+}
+
+.footer-mail,
+.footer-tel {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
