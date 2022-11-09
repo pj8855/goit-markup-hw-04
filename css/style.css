@@ -36,6 +36,9 @@ h1, h2, h3, p, ul {
   --brand-color: #2196F3;
   --header-color: #000000;
   --footer-color: #FFFFFF;
+  --headline-color: #212121;
+  --text-color: #757575;
+  --bg-color: #F5F4FA;
 }
 
 .logo {
@@ -65,7 +68,6 @@ h1, h2, h3, p, ul {
 /*  -- Навігація по сторінках у хеддері -- */
 .header {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -84,7 +86,7 @@ h1, h2, h3, p, ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--headline-color);
   padding: 32px 0;
 }
 
@@ -100,29 +102,34 @@ h1, h2, h3, p, ul {
   justify-self: flex-end;
 }
 
-.mail {
+.header-contacts {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.02em;
-  color: var(--brand-color);
+  color: var(--text-color);
   text-decoration: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.tel {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.02em;
-  color: #757575;
-  text-decoration: none;
-  cursor: pointer;
+.header-contacts:hover {
+  color: var(--brand-color);
+}
+
+.envelope-icon,
+.smartphone-icon {
+  fill: currentColor;
 }
 
 /* -- Секція heros -- */
 .heros {
-  background-color: #2F303A;
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/heros-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 1600px;
+  background-position: center;
   padding: 200px 0;
 }
 
@@ -132,7 +139,7 @@ h1, h2, h3, p, ul {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--footer-color);
   text-align: center;
   width: 696px;
   margin: 0 auto;
@@ -149,7 +156,7 @@ h1, h2, h3, p, ul {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
+  color: var(--footer-color);
   margin: 30px auto 0;
   padding: 10px 32px;
   display: flex;
@@ -166,12 +173,23 @@ h1, h2, h3, p, ul {
   width: 270px;
 }
 
+.features-content {
+  background-color: var(--bg-color);
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.features-icon {
+  fill: currentColor;
+}
+
 .features-title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--headline-color);
   margin-bottom: 10px;
 }
 
@@ -179,7 +197,7 @@ h1, h2, h3, p, ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color);
 }
 
 /* -- Секція about -- */
@@ -192,7 +210,7 @@ h1, h2, h3, p, ul {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--headline-color);
   margin-bottom: 50px;
 }
 
@@ -203,7 +221,7 @@ h1, h2, h3, p, ul {
 
 /* -- Секція Команда -- */
 .team {
-  background: #F5F4FA;
+  background: var(--bg-color);
 }
 
 .team-title {
@@ -211,7 +229,7 @@ h1, h2, h3, p, ul {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--headline-color);
   margin-bottom: 50px;
 }
 
@@ -221,7 +239,7 @@ h1, h2, h3, p, ul {
 }
 
 .team-list-item {
-  background: #FFFFFF;
+  background: var(--footer-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -237,7 +255,7 @@ h1, h2, h3, p, ul {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--headline-color);
   padding-top: 30px;
   padding-bottom: 10px;
 }
@@ -248,8 +266,72 @@ h1, h2, h3, p, ul {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
-  padding-bottom: 30px;
+  color: var(--text-color);
+  padding-bottom: 6px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 32px 30px;
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #AFB1B8;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--brand-color);
+  color: var(--footer-color);
+}
+
+.socials-icons {
+  fill: currentColor;
+}
+
+.clients-title {
+  font-family: 'Roboto';
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--headline-color);
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clients-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  color:  #AFB1B8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--brand-color);
+}
+
+.clients-icon {
+  fill: currentColor;
 }
 
 /* -- Кнопки фільтрів на ст. Портфоліо -- */
@@ -267,7 +349,7 @@ h1, h2, h3, p, ul {
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--header-color);
   border: 0;
   border-radius: 4px;
   padding: 6px 25px;
@@ -275,7 +357,7 @@ h1, h2, h3, p, ul {
 
 .filter-button:hover,
 .filter-button:focus {
-  color: #FFFFFF;
+  color: var(--footer-color);
   background: var(--brand-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
@@ -293,18 +375,26 @@ h1, h2, h3, p, ul {
   justify-content: center;
 }
 
+.project-list-item:hover,
+.project-list-item:focus {
+  width: 370px;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .project-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--headline-color)
 }
 
 .project-text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color);
 }
 
 .project-content {
@@ -350,4 +440,50 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-address-block {
+  width: 231px;
+}
+
+.fotter-socials-block {
+  width: 206px;
+}
+
+.footer-socials-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--footer-color);
+  margin-bottom: 20px;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--footer-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: var(--brand-color);
+}
+
+.footer-content {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
 }
